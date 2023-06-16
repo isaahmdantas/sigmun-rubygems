@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>SIGMun Components pack - Dashboard</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../assets/stylesheets/sigmun-default.css" rel="stylesheet" />
+
+        <!-- toastify-js -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    </head>
+    <body>
+        <header id="sm-hero-demo__header">
+            <div class="custom-border"></div>
+            <!-- Responsive navbar-->
+            <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light border-bottom">
+                <div class="container-fluid">
+                    <div>
+                        <button class="navbar-toggler d-inline-block" type="button" data-bs-toggle="collapse" data-bs-target="#layoutSidenav_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                        <a class="navbar-brand" href="#"><img id="main-logo" src="assets/main-logo.png" class="img-fluid" style="max-height: 40px;" alt=""></a>
+                    </div>
+
+                    <div class="d-none d-md-flex flex-grow-1 mx-5 justify-content-center">
+                        <form class="col-md-10 col-offset-1">
+                            <input id="sigmun-hero-search-input" type="text" name="" class="form-control" placeholder="Digite aqui sua busca">
+                        </form>
+                    </div>
+
+                    <div class="d-flex flex-grow-1 flex-sm-grow-0 flex-grow-md-0 justify-content-end">
+
+                        <div class="d-flex align-items-center">
+
+                            <nav class="nav-top-right-container">
+                                <ul class="nav-top-right list-unstyled list-inline mb-0">
+
+                                    <li class="nav-top-right__item position-relative" data-bs-toggle="tooltip" title="Notificações">
+                                        <a href="#" role="button" class="d-block" id="dropdownNotifications" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="bi bi-bell"></i>
+                                        </a>
+
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownNotifications">
+                                            <li><a class="dropdown-item" href="#"><i class="bi bi-info-circle"></i> Notificação de exemplo etc etc etc etc etce ted fwsrfeas fsefsefse se f fsefe</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-top-right__item position-relative" data-bs-toggle="tooltip" title="Ajuda">
+                                        <a href="#">
+                                            <i class="bi bi-question-circle"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-top-right__item position-relative" data-bs-toggle="tooltip" title="Módulos de Sistema">
+                                        <a href="#" role="button" class="d-block" id="dropdownApps" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="bi bi-grid-3x3-gap-fill"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownApps">
+                                            <li><a class="dropdown-item" href="#"><i class="bi bi-pencil"></i> Portal da Pref. de Mossoró</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="bi bi-search"></i> Portal da Transparência</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="bi bi-briefcase"></i> Portal do Emprego</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="bi bi-book"></i> Diário Oficial do Município</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </nav>
+
+
+                            <!-- componente -->
+                            <div class="ms-2 sm-hero__avatar position-relative">
+
+                                <div class="bg-info rounded-circle overflow-hidden" data-bs-toggle="tooltip" title="Meu Perfil">
+                                    <a href="#" role="button" class="d-block" id="dropdownAvatar" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <img src="https://via.placeholder.com/40x40" alt="avatar">
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownAvatar">
+                                        <li><a class="dropdown-item" href="#">Meu perfil</a></li>
+                                        <li><a class="dropdown-item" href="#">Fazer Logout</a></li>
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+            </nav>
+
+            <div class="sm-hero__header-title shadow-sm">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="p-3 d-flex justify-content-center">
+
+                                <button class="d-inline btn bd-sidebar-toggle d-md-none py-0 px-1 ms-3 order-3" type="button" data-bs-toggle="collapse" data-bs-target="#layoutSidenav_nav" aria-controls="layoutSidenav_nav" aria-expanded="true" aria-label="Toggle docs navigation">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-expand" fill="currentColor" viewBox="0 0 16 16">
+                                        <title>Expand</title>
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10z"></path>
+                                    </svg>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-collapse" fill="currentColor" viewBox="0 0 16 16">
+                                        <title>Collapse</title>
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zm7-8a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0zm-.5 11.707l-1.146 1.147a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 11.707V15.5a.5.5 0 0 1-1 0v-3.793z"></path>
+                                    </svg>
+                                </button>
+
+                                <h1 class="sm-hero__title">Módulo de CMS -> Portal da Prefeitura de Mossoró</h1>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="container-center" class="container-fluid p-0 bd-layout flex-column flex-sm-column flex-md-row">
+
+            <aside class="collapse show" id="layoutSidenav_nav">
+                <div class="sm-hero__sidenav">
+                    <div class="sm-hero__sidenav-menu">
+                        <nav class="nav bd-links">
+                            <ul class="list-unstyled py-2 p-0">
+                                <li>
+                                    <div class="sm-hero__sidenav-menu-heading">Core</div>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="index.html">
+                                        <div class="sm-hero__sidenav-link-icon"><svg class="svg-inline--fa fa-gauge-high" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="gauge-high" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 64C238.3 64 224 78.33 224 96C224 113.7 238.3 128 256 128C273.7 128 288 113.7 288 96C288 78.33 273.7 64 256 64zM256 416C291.3 416 320 387.3 320 352C320 334.6 313.1 318.9 301.9 307.4L365.1 161.7C371.3 149.5 365.8 135.4 353.7 130C341.5 124.7 327.4 130.2 322 142.3L257.9 288C257.3 288 256.6 287.1 256 287.1C220.7 287.1 192 316.7 192 352C192 387.3 220.7 416 256 416V416zM144 112C126.3 112 112 126.3 112 144C112 161.7 126.3 176 144 176C161.7 176 176 161.7 176 144C176 126.3 161.7 112 144 112zM96 288C113.7 288 128 273.7 128 256C128 238.3 113.7 224 96 224C78.33 224 64 238.3 64 256C64 273.7 78.33 288 96 288zM416 224C398.3 224 384 238.3 384 256C384 273.7 398.3 288 416 288C433.7 288 448 273.7 448 256C448 238.3 433.7 224 416 224z"></path></svg><!-- <i class="fas fa-tachometer-alt"></i> Font Awesome fontawesome.com --></div>
+                                        Dashboard
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                        <div class="sm-hero__sidenav-link-icon"><svg class="svg-inline--fa fa-table-columns" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="table-columns" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M0 96C0 60.65 28.65 32 64 32H448C483.3 32 512 60.65 512 96V416C512 451.3 483.3 480 448 480H64C28.65 480 0 451.3 0 416V96zM64 416H224V160H64V416zM448 160H288V416H448V160z"></path></svg><!-- <i class="fas fa-columns"></i> Font Awesome fontawesome.com --></div>
+                                        Layouts
+                                        <div class="sm-hero__sidenav-collapse-arrow"><svg class="svg-inline--fa fa-angle-down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"></path></svg><!-- <i class="fas fa-angle-down"></i> Font Awesome fontawesome.com --></div>
+                                    </a>
+                                    <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                        <nav class="sm-hero__sidenav-menu-nested nav">
+                                            <!-- <a class="nav-link" href="crud.html">- CRUD</a> -->
+                                            <a class="nav-link" href="listagem.html">- Listagem</a>
+                                            <a class="nav-link" href="create.html">- Create</a>
+                                        </nav>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </aside>
+
+            <main id="main-content">
+                <div class="container-fluid">
+
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item decoration-none"><a href="#">Início</a></li>
+                            <li class="breadcrumb-item decoration-none"><a href="#">Crud</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Listagem</li>
+                        </ol>
+                    </nav>
+
+                    <!-- listagem de notícias -->
+                    <section id="list-example" class="sm-hero__section">
+                        <h2 class="sm-hero__section-title">List Datatable</h2>
+
+
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <i class="bi bi-check-circle"></i>
+                            <strong>Sucesso!</strong> Registro cadastrado.
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+
+                        <div class="sm-hero__toolbox mb-3">
+                            <div class="card shadow-sm">
+
+                                <div class="card-body p-2">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-sm border-0 btn-outline-success"><i class="bi bi-plus"></i> Adicionar (modal)</a>
+                                    <a href="create.html" class="btn btn-sm border-0 btn-outline-success"><i class="bi bi-link"></i> Adicionar (form externo)</a>
+                                    <a href="#" class="btn btn-sm border-0 btn-outline-primary" onclick="toastify('mensagem', 'success')" ><i class="bi bi-info-circle"></i> ação 1</a>
+                                    <a href="#" class="btn btn-sm border-0 btn-outline-secondary"><i class="bi bi-info-circle"></i> ação 2</a>
+                                    <a href="#" class="btn btn-sm border-0 btn-outline-warning float-end"><i class="bi bi-info-circle"></i> ação 3</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="sm-hero__toolbox mb-3 card shadow-sm">
+                            <div class="card-body p-3">
+
+                                <div class="row">
+
+                                        <h6>Filtros:</h6>
+                                    <div class="col-md-6">
+
+                                            <div class="row align-items-center mb-3">
+                                                <div class="col-xs-12 col-sm-3">
+                                                    <p class="d-flex mb-0 justify-content-end">
+                                                        <label>
+                                                            <span>Unidade gestora</span>
+                                                        </label>
+                                                    </p>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-8">
+                                                    <div class="w-100">
+
+                                                        <select class="form-control form-select">
+
+                                                            <option value="?" selected="selected"></option>
+                                                            <option value=""></option><option label="PREFEITURA MUNICIPAL DE MOSSORÓ" value="object:381">PREFEITURA MUNICIPAL DE MOSSORÓ</option>
+                                                            <option label="FUNDO MUNICIPAL DE SAÚDE" value="object:382">FUNDO MUNICIPAL DE SAÚDE</option>
+                                                            <option label="FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL" value="object:383">FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL</option>
+                                                            <option label="SECRETARIA MUNICIPAL DE PLANEJAMENTO, ORÇAMENTO E GESTÃO" value="object:384">SECRETARIA MUNICIPAL DE PLANEJAMENTO, ORÇAMENTO E GESTÃO</option>
+                                                            <option label="SECRETARIA MUNICIPAL DE SEGURANÇA PUB. D. CIVIL. MOBILIDADE URBANA E TRÂNSITO" value="object:385">SECRETARIA MUNICIPAL DE SEGURANÇA PUB. D. CIVIL. MOBILIDADE URBANA E TRÂNSITO</option>
+                                                            <option label="SECRETARIA MUN. DE INF., MEIO AMB., URB. E SERVIÇOS URBANOS" value="object:386">SECRETARIA MUN. DE INF., MEIO AMB., URB. E SERVIÇOS URBANOS</option>
+                                                            <option label="SECRETARIA MUNICIPAL DE GOVERNO " value="object:387">SECRETARIA MUNICIPAL DE GOVERNO </option>
+                                                            <option label="SECRETARIA MUNICIPAL DE FINANÇAS" value="object:388">SECRETARIA MUNICIPAL DE FINANÇAS</option>
+                                                            <option label="SECRETARIA MUNICIPAL DE ESPORTE E JUVENTUDE " value="object:389">SECRETARIA MUNICIPAL DE ESPORTE E JUVENTUDE </option>
+                                                            <option label="SECRETARIA MUNICIPAL DE EDUCAÇÃO" value="object:390">SECRETARIA MUNICIPAL DE EDUCAÇÃO</option>
+                                                            <option label="SEC. MUN. DO DESENV. ECONÔMICO, INOVAÇÃO E TURISMO" value="object:391">SEC. MUN. DO DESENV. ECONÔMICO, INOVAÇÃO E TURISMO</option>
+                                                            <option label="SECRETARIA MUNICIPAL DE CULTURA " value="object:392">SECRETARIA MUNICIPAL DE CULTURA </option>
+                                                            <option label="SECRETARIA MUNICIPAL DE COMUNICAÇÃO SOCIAL " value="object:393">SECRETARIA MUNICIPAL DE COMUNICAÇÃO SOCIAL </option>
+                                                            <option label="SECRETARIA MUNICIPAL DE AGRICULTURA E DESENVOLVIMENTO RURAL" value="object:394">SECRETARIA MUNICIPAL DE AGRICULTURA E DESENVOLVIMENTO RURAL</option>
+                                                            <option label="PROCURADORIA GERAL DO MUNICÍPIO " value="object:395">PROCURADORIA GERAL DO MUNICÍPIO </option>
+                                                            <option label="CONTROLADORIA GERAL DO MUNICÍPIO " value="object:396">CONTROLADORIA GERAL DO MUNICÍPIO </option>
+                                                            <option label="SECRETARIA MUNICIPAL DE FAZENDA " value="object:397">SECRETARIA MUNICIPAL DE FAZENDA </option>
+                                                            <option label="SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO" value="object:398">SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO</option>
+                                                        </select>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+
+                                            <div class="row align-items-center mb-3">
+                                                <div class="col-xs-12 col-sm-3">
+                                                    <p class="d-flex mb-0 justify-content-end">
+                                                        <label>
+                                                            <span>Período</span>
+                                                        </label>
+                                                    </p>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-xs-12 col-sm-11 d-flex justify-content-end">
+                                                <button class="btn btn-primary" ><i class="bi bi-search"></i> Pesquisar</button>
+                                            </div>
+
+
+
+
+
+
+
+
+                                    </div>
+
+
+                                    <div class="col-md-6 align-items-center d-flex">
+                                        <div>
+                                            <small class="mb-0 text-primary fw-bold">Total de Receitas</small>
+                                            <p>R$ 24395872938572985</p>
+
+                                            <small class="mb-0 fw-bold">Total arrecadado</small>
+                                            <p>R$ 24395872938572985</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <div class="card p-3">
+                            <table id="demo-datatable" class="table table-striped" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>Nome</th>
+                                        <th>Posição</th>
+                                        <th>Escritório</th>
+                                        <th>Idade</th>
+                                        <th>Data de início</th>
+                                        <th>Ações</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td>Unity Butler</td>
+                                        <td>Marketing Designer</td>
+                                        <td>San Francisco</td>
+                                        <td>47</td>
+                                        <td>2009-12-09</td>
+                                        <td>
+                                            <div class="sm-hero__datatable-actions">
+                                                <a href="#" class="btn btn-sm btn-warning text-dark"><i class="bi bi-pencil"></i> Editar</a>
+                                                <a href="#" class="btn btn-sm btn-danger"><i class="bi bi-trash"></i>Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Howard Hatfield</td>
+                                        <td>Office Manager</td>
+                                        <td>San Francisco</td>
+                                        <td>51</td>
+                                        <td>2008-12-16</td>
+                                        <td>
+                                            <div class="sm-hero__datatable-actions">
+                                                <a href="#" class="btn btn-sm btn-warning text-dark"><i class="bi bi-pencil"></i> Editar</a>
+                                                <a href="#" class="btn btn-sm btn-danger"><i class="bi bi-trash"></i>Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hope Fuentes</td>
+                                        <td>Secretary</td>
+                                        <td>San Francisco</td>
+                                        <td>41</td>
+                                        <td>2010-02-12</td>
+                                        <td>
+                                            <div class="sm-hero__datatable-actions">
+                                                <a href="#" class="btn btn-sm btn-warning text-dark"><i class="bi bi-pencil"></i> Editar</a>
+                                                <a href="#" class="btn btn-sm btn-danger"><i class="bi bi-trash"></i>Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Vivian Harrell</td>
+                                        <td>Financial Controller</td>
+                                        <td>San Francisco</td>
+                                        <td>62</td>
+                                        <td>2009-02-14</td>
+                                        <td>
+                                            <div class="sm-hero__datatable-actions">
+                                                <a href="#" class="btn btn-sm btn-warning text-dark"><i class="bi bi-pencil"></i> Editar</a>
+                                                <a href="#" class="btn btn-sm btn-danger"><i class="bi bi-trash"></i>Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Timothy Mooney</td>
+                                        <td>Office Manager</td>
+                                        <td>London</td>
+                                        <td>37</td>
+                                        <td>2008-12-11</td>
+                                        <td>
+                                            <div class="sm-hero__datatable-actions">
+                                                <a href="#" class="btn btn-sm btn-warning text-dark"><i class="bi bi-pencil"></i> Editar</a>
+                                                <a href="#" class="btn btn-sm btn-danger"><i class="bi bi-trash"></i>Delete</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Nome</th>
+                                        <th>Posição</th>
+                                        <th>Escritório</th>
+                                        <th>Idade</th>
+                                        <th>Data de Início</th>
+                                        <th>Ações</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+
+                    </section>
+
+                </div>
+            </main>
+
+
+        </div>
+
+
+
+        <!-- Modal -->
+        <div class="modal fade modal-dialog-scrollable" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Título do modal</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">Helper para texto.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Checkbox</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="bi bi-x"></i> Fechar</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="toastify('sucesso! registro cadastrado', 'success')"><i class="bi bi-save"></i> Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Core theme JS (inclui bootstrap)-->
+        <script type="module" src="js/sigmun.js"></script>
+
+        <!-- DataTables.net -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+
+        <!-- toastify-js -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+        <!-- main script -temp -->
+        <script>
+            $(document).ready(function() {
+                $('#demo-datatable').DataTable({
+                    paging: true,
+                    ordering: true,
+                    info: true,
+                    language: {
+                        url: 'https://cdn.datatables.net/plug-ins/1.11.5/i18n/pt-BR.json',
+                    },
+                });
+            });
+
+            // toastify-js
+            function toastify(message, type) {
+                Toastify({
+                    text: message,
+                    duration: 3000,
+                    close: true,
+                    gravity: "bottom",
+                    position: "right",
+                    backgroundColor: type == 'success' ? "#4fbe87" : "#f83f37",
+                    stopOnFocus: true,
+                    className: "rounded",
+                    onClick: function() {}
+                }).showToast();
+            }
+
+        </script>
+
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
