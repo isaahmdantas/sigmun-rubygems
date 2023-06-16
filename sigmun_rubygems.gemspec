@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["Isadora Dantas"]
   spec.email = ["isadoramariadasilvadantas@gmail.com"]
 
-  spec.summary = "TODO: Write a short summary, because RubyGems requires one."
-  spec.description = "TODO: Write a longer description or delete this line."
+  spec.summary = "Gem para facilitar o uso e atualização dos componentes do sigmun-hero."
+  spec.description = "Gem para utilizar no scaffold sigmun-rails na utilização dos componentes e estilização dos futuros projetos da PMM."
   spec.homepage = "https://github.com/isaahmdantas/sigmun-rubygems"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
